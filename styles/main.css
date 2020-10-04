@@ -62,9 +62,14 @@ table {
     height: 176px;
     display: flex;
     flex-shrink: 1;
+    align-items: center;
     justify-content: center;
     padding-right: 16px;
     border-right: 3px solid #DBB839;
+}
+.logo {
+    height: 117.5px;
+    width: 113px;
 }
 .job-description {
     flex-shrink: 1;
@@ -137,4 +142,15 @@ table {
 .footer-icon {
     width: 32px;
     height: 32px;
+}
+
+@media screen and (max-width:490px) {
+    .logo {
+        height: 70.54px;
+        width: 67.8px;
+    }
+    .job-description {
+        font-size: 16px;
+        line-height: 16px;
+    }
 }
