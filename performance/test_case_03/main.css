@@ -5,7 +5,7 @@
     --font-size-70-responsive-display-letter-spacing: -3.5;
 }
 html {
-    font-family: "Globotipo VF", "Globotipo";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #333333;
     background-color: #F5F5F5;
 }
@@ -29,6 +29,7 @@ html {
     font-weight: 700;
 }
 .book {
+    font-family: Globotipo Variable, Globotipo Book;
     font-size: var(--font-size-60-responsive-book);
     letter-spacing: var(--font-size-60-responsive-book-letter-spacing);
     font-stretch: normal;
@@ -55,6 +56,7 @@ html {
     font-variation-settings: "opsz" 10, "wdth" 10, "ital" 1;
 }
 .display {
+    font-family: Globotipo Variable, Globotipo Display;
     font-size: var(--font-size-70-responsive-display);
     letter-spacing: var(--font-size-70-responsive-display-letter-spacing);
     font-stretch: normal;
