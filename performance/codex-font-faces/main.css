@@ -1,6 +1,6 @@
 @font-face {
     font-family: Globotipo VF;
-    font-stretch: ultra-condensed normal;
+    font-stretch: condensed normal;
     font-style: normal italic;
     font-weight: 300 700;
     src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/typefaces/globotipo-variable.woff2) format("woff2 supports variations"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/typefaces/globotipo-variable.woff2) format("woff2-variations"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/typefaces/globotipo-variable.woff) format("woff-variations")

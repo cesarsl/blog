@@ -1,0 +1,82 @@
+:root {
+    --font-size-60-responsive-book: 20px;
+    --font-size-60-responsive-book-letter-spacing: -3;
+    --font-size-70-responsive-display: 24px;
+    --font-size-70-responsive-display-letter-spacing: -3.5;
+}
+html {
+    font-family: "Globotipo";
+    color: #333333;
+    background-color: #F5F5F5;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+.two-columns {
+    grid-template-columns: 1fr 1fr;
+}
+.light {
+    font-weight: 300;
+}
+.regular {
+    font-weight: 400;
+}
+.semibold {
+    font-weight: 600;
+}
+.bold {
+    font-weight: 700;
+}
+.book {
+    font-size: var(--font-size-60-responsive-book);
+    letter-spacing: var(--font-size-60-responsive-book-letter-spacing);
+    font-stretch: normal;
+    font-style: normal;
+    font-feature-settings: "ss01" 0, "ss02" 0, "ss03" 1;
+    font-variation-settings: "opsz" 10, "wdth" 100, "ital" 0;
+}
+.book.condensed {
+    font-stretch: condensed;
+    font-style: normal;
+    font-feature-settings: "ss01" 0, "ss02" 0, "ss03" 1;
+    font-variation-settings: "opsz" 10, "wdth" 10, "ital" 0;
+}
+.book.italic {
+    font-stretch: normal;
+    font-style: italic;
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 0;
+    font-variation-settings: "opsz" 10, "wdth" 100, "ital" 1;
+}
+.book.condensed.italic {
+    font-stretch: condensed;
+    font-style: italic;
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 0;
+    font-variation-settings: "opsz" 10, "wdth" 10, "ital" 1;
+}
+.display {
+    font-size: var(--font-size-70-responsive-display);
+    letter-spacing: var(--font-size-70-responsive-display-letter-spacing);
+    font-stretch: normal;
+    font-style: normal;
+    font-feature-settings: "ss01" 1, "ss02" 0, "ss03" 1;
+    font-variation-settings: "opsz" 36, "wdth" 100, "ital" 0;
+}
+.display.condensed {
+    font-stretch: condensed;
+    font-style: normal;
+    font-feature-settings: "ss01" 1, "ss02" 0, "ss03" 1;
+    font-variation-settings: "opsz" 36, "wdth" 10, "ital" 0;
+}
+.display.italic {
+    font-stretch: normal;
+    font-style: italic;
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 0;
+    font-variation-settings: "opsz" 36, "wdth" 100, "ital" 0;
+}
+.display.condensed.italic {
+    font-stretch: condensed;
+    font-style: italic;
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 0;
+    font-variation-settings: "opsz" 36, "wdth" 10, "ital" 1;
+}
