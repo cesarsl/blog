@@ -1,104 +1,84 @@
-@font-face {
-    font-family: Globotipo Book;
-    font-style: italic;
-    font-weight: 400;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-normal-regular-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-normal-regular-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Display;
-    font-stretch: condensed;
-    font-style: italic;
-    font-weight: 700;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-condensed-bold-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-condensed-bold-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Book;
-    font-style: italic;
+:root {
+    --font-size-60-responsive-book: 20px;
+    --font-size-60-responsive-book-letter-spacing: -3;
+    --font-size-70-responsive-display: 24px;
+    --font-size-70-responsive-display-letter-spacing: -3.5;
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333;
+    background-color: #F5F5F5;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+.two-columns {
+    grid-template-columns: 1fr 1fr;
+}
+.light {
     font-weight: 300;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-normal-light-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-normal-light-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Book;
-    font-stretch: condensed;
-    font-style: italic;
-    font-weight: 300;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-condensed-light-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-condensed-light-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Display;
-    font-style: italic;
-    font-weight: 600;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-normal-semibold-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-normal-semibold-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Display;
-    font-style: italic;
-    font-weight: 300;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-normal-light-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-normal-light-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Book;
-    font-stretch: condensed;
-    font-style: italic;
-    font-weight: 600;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-condensed-semibold-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-condensed-semibold-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Display;
-    font-style: italic;
+}
+.regular {
     font-weight: 400;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-normal-regular-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-normal-regular-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Display;
-    font-stretch: condensed;
-    font-style: italic;
-    font-weight: 300;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-condensed-light-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-condensed-light-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Book;
-    font-style: italic;
-    font-weight: 700;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-normal-bold-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-normal-bold-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Book;
-    font-style: italic;
+}
+.semibold {
     font-weight: 600;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-normal-semibold-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-normal-semibold-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Display;
-    font-style: italic;
+}
+.bold {
     font-weight: 700;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-normal-bold-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-normal-bold-italic.woff) format("woff")
-    }
-@font-face {
+}
+.book {
     font-family: Globotipo Book;
+    font-size: var(--font-size-60-responsive-book);
+    letter-spacing: var(--font-size-60-responsive-book-letter-spacing);
+    font-stretch: normal;
+    font-style: normal;
+    font-feature-settings: "ss01" 0, "ss02" 0, "ss03" 1;
+    font-variation-settings: "opsz" 10, "wdth" 100, "ital" 0;
+}
+.book.condensed {
+    font-stretch: condensed;
+    font-style: normal;
+    font-feature-settings: "ss01" 0, "ss02" 0, "ss03" 1;
+    font-variation-settings: "opsz" 10, "wdth" 10, "ital" 0;
+}
+.book.italic {
+    font-stretch: normal;
+    font-style: italic;
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 0;
+    font-variation-settings: "opsz" 10, "wdth" 100, "ital" 1;
+}
+.book.condensed.italic {
     font-stretch: condensed;
     font-style: italic;
-    font-weight: 700;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-condensed-bold-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-condensed-bold-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Book;
-    font-stretch: condensed;
-    font-style: italic;
-    font-weight: 400;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-condensed-regular-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-book-condensed-regular-italic.woff) format("woff")
-    }
-@font-face {
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 0;
+    font-variation-settings: "opsz" 10, "wdth" 10, "ital" 1;
+}
+.display {
     font-family: Globotipo Display;
+    font-size: var(--font-size-70-responsive-display);
+    letter-spacing: var(--font-size-70-responsive-display-letter-spacing);
+    font-stretch: normal;
+    font-style: normal;
+    font-feature-settings: "ss01" 1, "ss02" 0, "ss03" 1;
+    font-variation-settings: "opsz" 36, "wdth" 100, "ital" 0;
+}
+.display.condensed {
+    font-stretch: condensed;
+    font-style: normal;
+    font-feature-settings: "ss01" 1, "ss02" 0, "ss03" 1;
+    font-variation-settings: "opsz" 36, "wdth" 10, "ital" 0;
+}
+.display.italic {
+    font-stretch: normal;
+    font-style: italic;
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 0;
+    font-variation-settings: "opsz" 36, "wdth" 100, "ital" 0;
+}
+.display.condensed.italic {
     font-stretch: condensed;
     font-style: italic;
-    font-weight: 400;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-condensed-regular-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-condensed-regular-italic.woff) format("woff")
-    }
-@font-face {
-    font-family: Globotipo Display;
-    font-stretch: condensed;
-    font-style: italic;
-    font-weight: 600;
-    src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-condensed-semibold-italic.woff2) format("woff2"), url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/beta/foundation/typefaces/hinted/globotipo-display-condensed-semibold-italic.woff) format("woff")
-    }
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 0;
+    font-variation-settings: "opsz" 36, "wdth" 10, "ital" 1;
+}
