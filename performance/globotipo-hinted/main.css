@@ -1,8 +1,8 @@
 :root {
     --font-size-60-responsive-book: 20px;
-    --font-size-60-responsive-book-letter-spacing: -3;
+    --font-size-60-responsive-book-letter-spacing: -0.03em;
     --font-size-70-responsive-display: 24px;
-    --font-size-70-responsive-display-letter-spacing: -3.5;
+    --font-size-70-responsive-display-letter-spacing: -0.035em;
 }
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
