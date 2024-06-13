@@ -48,17 +48,16 @@ table {
 .main-wrapper {
     display: flex;
     flex-flow: column wrap;
-    background-color: #ffffff;
-}
-.home-page {
-    font-family: inherit;
-    width: 100%;
-    height: 100vh;
     background-image: url('../images/bg.svg'), url('../images/bg.svg'), linear-gradient(180deg, #444444 0%, #222222 100%);
     background-blend-mode: overlay, overlay, normal;
     background-repeat: no-repeat;
     background-size: 50% auto, 50% auto, cover;
     background-position: -50% 115%, 135% -50%, center;
+}
+.home-page {
+    font-family: inherit;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
