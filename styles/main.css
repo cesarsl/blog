@@ -46,6 +46,8 @@ table {
 	border-spacing: 0;
 }
 .main-wrapper {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-flow: column wrap;
     background-image: url('../images/bg.svg'), url('../images/bg.svg'), linear-gradient(180deg, #444444 0%, #222222 100%);
